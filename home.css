@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* --------background vedio------- */
+#vedio{
+    width: 100%;
+    /* height: 100vh; */
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: -3;  
+    opacity: 0.9; 
+}
+.blacklayer{
+    position: fixed;
+    margin-top: -6%;
+    margin-left: 0%;
+    width: 100%;
+    height: 130%;
+    overflow: hidden;
+    /* opacity: 0; */
+    background-color: rgba(1, 29, 33, 0.644);
+    /* rgba(132, 130, 130, 0.801)light grey */
+    z-index: -2;
+}
+/* --------logo------- */
+.logo{
+    margin: 1vh 0 0 2.7vh;
+}
+.logo h1{
+    font-size: 1wh;
+    color:beige;
+}
+.logo span{
+    color:rgb(107, 225, 225);
+}
+/* --------navigation bar------- */
+.navbar{
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+}
+.navbar ul{
+    display: flex;
+
+    list-style: none;
+    margin-top: 2.8vh;
+    margin-left: 45vw;
+}
+.navbar ul li a{
+    margin-inline: 3vh;
+    font-size: 1.4vw;
+    text-decoration: none;
+    color: beige;
+
+}
+/* --------navigation bar hover effect------- */
+
+.navbar ul li a:hover{
+    color: rgb(107, 225, 225);
+    border-bottom: 1px solid rgb(107, 225, 225);
+    font-size: 1.7vw;
+}
+/* --------home context------- */
+
+.home{
+    width: 100%;
+    height: 100vh;
+}
+.hometop{
+    /* border-top: 4px  solid red;
+    border-bottom: 4px  solid red;
+    border-right: 4px  solid red;
+    border-left: 4px  solid red; */
+    width: 80%;
+    height:15%;
+    position: absolute;
+    color:beige;
+    margin-top: 33vh;
+    margin-left:33vh;
+    
+
+}
+.hometop h1{
+    font-size: 12vh;
+}
+
+.homebottom{
+    /* border-top: 4px  solid blue;
+    border-bottom: 4px  solid blue;
+    border-right: 4px  solid blue;
+    border-left: 4px  solid blue; */
+    width: 40%;
+    height:15%;
+    position: absolute;
+    color:beige;
+    margin-top: 50vh;
+    margin-left:45vh;
+    text-align: center;
+    animation: homeright_anime 2s ease-in 0s  forwards ;
+    /* display: none; */
+}
+
+.homebottom h3{
+    padding-bottom: 1vh;
+    font-size: 3.6vh;
+    color:rgb(107, 225, 225);
+}
+.homebottom p{
+    font-size: 2.5vh;
+}
+/* --------register button------- */
+.btn_login{
+    padding: 1.4vh 1.4vh;
+    position: fixed;
+    margin-top: 2vh;
+    margin-left: -7vh;
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.4vh;
+    background-color: beige;
+    border-radius: 1vw;
+}
+.btn_login:hover{
+    cursor: pointer;
+    background-color: rgba(43, 229, 229, 0.736);
+    font-size: 1.2vw;
+    
+}
+
+/* --------register form------- */
+
+.register{
+    display: none;
+    /* display: none; */
+    position: absolute;
+    background-color:#79a49ffd;
+    /* border: 3px solid blue; */
+    width: 40%;
+    height: 60%;
+    left: 50%;
+    top: 50%;
+    border-radius: 10%;
+    box-shadow: 0vh 1vh 1vh 1vh rgb(152, 234, 234);
+    transform: translate(-50%,-50%);
+    z-index: 0;
+    
+}
+.close{
+    position: absolute;
+    top: 2%;
+    cursor: pointer;
+    right: 10%;
+    font-size: 5vh;
+    transform: rotate(45deg);
+    color: black;
+}
+
+.reg_heading{
+    margin: 3vh 0vh;
+    margin-left: 25vh;
+    font-size: 4vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+}
+.input_field{
+    margin: 2.5vh 1.3vh ;
+    display: flex;
+}
+.input_field label{
+    /* border: 3px solid blue; */
+    margin-left: 16vh;
+    width: 7.2vw;
+    padding-top: 2vh;
+     font-size: 3.2vh;
+}
+.reg_input{
+    font-size: 2.7vh;
+    /* background-color: rgba(241, 244, 244, 0.035); */
+    /* border:3px solid red; */
+    width:40%;
+    outline: none;
+    padding: 2vh 2vh;
+
+}
+.submit_btn{
+    width: 20vw;
+    padding: 1.4vh 1.4vh;
+    margin-top: 1vh;
+    margin-left: 12vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2.4vh;
+    background-color: beige;
+    border-radius: 1.5vw;
+}
+.submit_btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 1.2vw;
+}
+
+/* --------show register form----  */
+
+/* --------animation home-------  */
+
+@keyframes homeright_anime {
+    0%{
+        display: none;
+        
+    }
+    50%{
+        display: none;
+        bottom: 10vh;
+    }
+    100%{
+        bottom: 37vh;
+    }
+}
