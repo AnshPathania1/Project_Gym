@@ -246,6 +246,7 @@
             /* color: aqua; */
             font-size: 4vh;
         }
+       
     }
     @media (max-width:800px){
         .navbar ul{
@@ -255,7 +256,23 @@
             margin-left: 27vw;
         }
         .navbar ul li a{
-            color: aqua;
+            /* color: aqua; */
             font-size: 4vh;
+        }
+    }
+    @media (max-width:760px){
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            margin-top: 6vh;
+            margin-left: 28vw;
+        }
+        .navbar ul li a{
+            color: aqua;
+            font-size: 3.5vh;
+        }
+        .logo h1{
+            font-size: 5vh;
+            color:beige;
         }
     }
