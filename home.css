@@ -220,3 +220,19 @@
         bottom: 37vh;
     }
 }
+
+/* --------media files -------  */
+    @media screen and (max-width:910px){
+        .navbar ul{
+            display: flex;
+          
+            list-style: none;
+            margin-top: 4vh;
+            margin-left: 35vw;
+        }
+        .navbar ul li a{
+            /* color: aqua; */
+            font-size: 4vh;
+        }
+        
+    }
