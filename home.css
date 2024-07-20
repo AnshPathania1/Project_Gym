@@ -225,7 +225,6 @@
     @media screen and (max-width:910px){
         .navbar ul{
             display: flex;
-          
             list-style: none;
             margin-top: 4vh;
             margin-left: 35vw;
@@ -235,4 +234,28 @@
             font-size: 4vh;
         }
         
+    }
+    @media (max-width:860px){
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            margin-top: 6vh;
+            margin-left: 30vw;
+        }
+        .navbar ul li a{
+            /* color: aqua; */
+            font-size: 4vh;
+        }
+    }
+    @media (max-width:800px){
+        .navbar ul{
+            display: flex;
+            list-style: none;
+            margin-top: 6vh;
+            margin-left: 27vw;
+        }
+        .navbar ul li a{
+            color: aqua;
+            font-size: 4vh;
+        }
     }
