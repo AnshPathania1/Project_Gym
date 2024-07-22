@@ -56,6 +56,46 @@
     color: beige;
 
 }
+/* --------side nav bar------- */
+.menu h2{
+    display: none;
+    position:fixed;
+    color:white;
+    right: 2%;
+    top: 3%;
+    transform: rotate(90deg);
+}
+.sidebar{
+    display: none;
+    border: 3px solid red;
+    position: absolute;
+    height: 97%;
+    top:0%;
+    right:0%;
+    width:15%;
+    background-color: aliceblue;
+    z-index:1 ;
+}
+.sidebar ul{
+    margin-top: 35%;
+    list-style: none;
+}
+.sidebar ul li {
+    margin-bottom: 25%;
+    
+    text-decoration: none;
+    font-size: 3vh;
+}
+.close_btn{
+    position: absolute;
+    top: 2%;
+    cursor: pointer;
+    right: 10%;
+    font-size: 5vh;
+    transform: rotate(45deg);
+    color: black;
+    
+}
 /* --------navigation bar hover effect------- */
 
 .navbar ul li a:hover{
@@ -334,6 +374,35 @@
             background: url(picture/bg_vedio_img.png);
         }
    }
-  
+   @media (max-width:615px){
+    .register{
+        width:30%;
+        height: 45%;
+        left: 45%;
+    }
+    .reg_heading{
+        margin-left: 20vh;
+        font-size: 2vh;
+    }
+    .input_field label{
+        border: 3px solid blue;
+        margin-left: 8vh;
+        width: 7.2vw;
+        padding-top: 2vh;
+         font-size: 2.5vh;
+    }
+    .reg_input{
+        font-size: 2vh;
+        /* background-color: rgba(241, 244, 244, 0.035); */
+        /* border:3px solid red; */
+        width:35%;
+        outline: none;
+        padding: 1.2vh 1.5vh;
+    
+    }
+    .submit_btn{
+        margin-left: 10vh;
+    }
+}
     
 
