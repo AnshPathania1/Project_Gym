@@ -1,3 +1,5 @@
+// form click 
+
 document.getElementById('button').addEventListener('click',function(){
     document.querySelector('.register').style.display="flex"
 });
