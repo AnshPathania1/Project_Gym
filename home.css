@@ -393,6 +393,9 @@
             padding: 0.2vh 1.5vh;
         
         }
+        .register_layer{
+            width: 100%;
+        }
         .submit_btn{
             width: 15vw;
             margin-left: 20vh;
