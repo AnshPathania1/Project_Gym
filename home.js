@@ -1,3 +1,16 @@
+
+
+//side nav
+document.querySelector('.menu').addEventListener('click',function(){
+    document.querySelector('.sidebar').style.display="flex"
+});
+document.querySelector('.close_btn').addEventListener('click',function(){
+    document.querySelector('.sidebar').style.display="none"
+});
+
+
+
+
 // form click 
 
 document.getElementById('button').addEventListener('click',function(){
