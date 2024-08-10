@@ -21,18 +21,72 @@ body,main{
     justify-content: space-evenly;
 }
 .menu_right ul a{
- font-size: 3vh;
+    font-size: 1.4vw;
+    text-decoration: none;  
+    color: beige;
+     font-size: 3vh;
 }
 .logo{
     width: 50%;
-    padding-left: 1.5vh;
+    padding-left: 2vh;
 }
 .logo h1{
-    font-size: 2wh;
+    font-size: 3.5vh;
     color:beige;
 }
 .logo span{
     color:rgb(107, 225, 225);
+}
+/* --------navigation bar hover effect------- */
+.menu_right ul a:hover{
+    color: rgb(107, 225, 225);
+    border-bottom: 1px solid rgb(107, 225, 225);
+    font-size: 1.7vw;
+}
+
+/* --------home context------- */
+.hometop{
+    border-top: 4px  solid red;
+    border-bottom: 4px  solid red;
+    border-right: 4px  solid red;
+    border-left: 4px  solid red;
+    width: 80%;
+    height:15%;
+    position: absolute;
+    color:beige;
+    margin-top: 33vh;
+    margin-left:33vh;
+    
+
+}
+.hometop h1{
+    font-size: 12vh;
+}
+
+
+.homebottom{
+    border-top: 4px  solid blue;
+    border-bottom: 4px  solid blue;
+    border-right: 4px  solid blue;
+    border-left: 4px  solid blue;
+    width: 40%;
+    height:15%;
+    position: absolute;
+    color:beige;
+    margin-top: 50vh;
+    margin-left:45vh;
+    text-align: center;
+    animation: homeright_anime 2s ease-in 0s  forwards ;
+    /* display: none; */
+}
+
+.homebottom h3{
+    padding-bottom: 1vh;
+    font-size: 3.6vh;
+    color:rgb(107, 225, 225);
+}
+.homebottom p{
+    font-size: 2.5vh;
 }
 /* --------background -------
 .vedio{
@@ -61,16 +115,7 @@ body,main{
 
 --------navigation bar-------
 
-.navbar ul{
-   
-}
-.navbar ul li a{
-    margin-inline: 3vh;
-    font-size: 1.4vw;
-    text-decoration: none;
-    color: beige;
 
-}
 --------side nav bar-------
 .menu h2{
     display: flex;
@@ -115,14 +160,12 @@ body,main{
     color: white;
     
 }
---------navigation bar hover effect-------
+
 .sidebar ul li a:hover{
    color: rgb(107, 225, 225);
 }
 .navbar ul li a:hover{
-    color: rgb(107, 225, 225);
-    border-bottom: 1px solid rgb(107, 225, 225);
-    font-size: 1.7vw;
+   
 }
 --------home context-------
 
@@ -130,48 +173,8 @@ body,main{
     width: 100%;
     height: 100%;
 }
-.hometop{
-    border-top: 4px  solid red;
-    border-bottom: 4px  solid red;
-    border-right: 4px  solid red;
-    border-left: 4px  solid red;
-    width: 80%;
-    height:15%;
-    position: absolute;
-    color:beige;
-    margin-top: 33vh;
-    margin-left:33vh;
-    
 
-}
-.hometop h1{
-    font-size: 12vh;
-}
 
-.homebottom{
-    border-top: 4px  solid blue;
-    border-bottom: 4px  solid blue;
-    border-right: 4px  solid blue;
-    border-left: 4px  solid blue;
-    width: 40%;
-    height:15%;
-    position: absolute;
-    color:beige;
-    margin-top: 50vh;
-    margin-left:45vh;
-    text-align: center;
-    animation: homeright_anime 2s ease-in 0s  forwards ;
-    /* display: none; */
-}
-
-.homebottom h3{
-    padding-bottom: 1vh;
-    font-size: 3.6vh;
-    color:rgb(107, 225, 225);
-}
-.homebottom p{
-    font-size: 2.5vh;
-}
 /* --------register button------- */
 .btn_login{
     padding: 1.4vh 1.4vh;
