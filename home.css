@@ -186,16 +186,14 @@
     /* display: none; */
     position: absolute;
     /* background-color:#79a49ffd; */
-    background: url(picture/form_bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+   
     /* border: 3px solid blue; */
     width: 40%;
     height: 60%;
     left: 50%;
     top: 50%;
     border-radius: 1%;
-    box-shadow: 1.6vh 1.6vh rgba(21, 19, 19, 0.781);
+  
     transform: translate(-50%,-50%);
     z-index: 1;
     
@@ -209,7 +207,10 @@
     height: 130%;
     overflow: hidden;
     /* opacity: 0; */
-    background-color:rgba(61, 60, 60, 0.973);
+    background:url(picture/form_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:blur(8px) ;
     /* rgba(132, 130, 130, 0.801)light grey */
     z-index: 0;
 }
