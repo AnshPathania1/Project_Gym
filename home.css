@@ -1,35 +1,31 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-/* --------background ------- */
-#vedio{
+body,main{
     width: 100%;
-    /* height: 100wh; */
-    position: fixed;
-    right: 0%;
-    bottom: -100%;
-    top: 0%;
-    z-index: -3;  
-    opacity: 0.9; 
+    height: 100%;
 }
-.blacklayer{
-    position: fixed;
-    margin-top: -6%;
-    margin-left: 0%;
-    width: 100%;
-    height: 130%;
-    overflow: hidden;
-    /* opacity: 0; */
-    background-color: rgba(1, 29, 33, 0.644);
-    /* rgba(132, 130, 130, 0.801)light grey */
-    z-index: -2;
+.navbar{
+    display: flex;
+    padding-top: 1vh;
+    align-items: center;
 }
-
-/* --------logo------- */
+.menu_right{
+    width: 50%;
+}
+.menu_right ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.menu_right ul a{
+ font-size: 3vh;
+}
 .logo{
-    margin: 1vh 0 0 2.7vh;
+    width: 50%;
+    padding-left: 1.5vh;
 }
 .logo h1{
     font-size: 2wh;
@@ -38,18 +34,35 @@
 .logo span{
     color:rgb(107, 225, 225);
 }
-/* --------navigation bar------- */
-.navbar{
-    display: flex;
-    position: fixed;
-    justify-content: space-between;
+/* --------background -------
+.vedio{
+    width: 100%;
+   background-color: rgb(255, 51, 0) ;
+    z-index: -3;  
+    opacity: 0.9; 
 }
-.navbar ul{
-    display: flex;
+.blacklayer{
+    display: none;
+    position: fixed;
+    margin-top: -6%;
+    margin-left: 0%;
+    width: 10%;
+    height: 130%;
+    overflow: hidden;
+    opacity: 0;
+    background-color: rgba(1, 29, 33, 0.644);
+    rgba(132, 130, 130, 0.801)light grey
+    z-index: -2;
+}
 
-    list-style: none;
-    margin-top: 2.8vh;
-    margin-left: 45vw;
+--------logo-------
+
+
+
+--------navigation bar-------
+
+.navbar ul{
+   
 }
 .navbar ul li a{
     margin-inline: 3vh;
@@ -58,9 +71,9 @@
     color: beige;
 
 }
-/* --------side nav bar------- */
+--------side nav bar-------
 .menu h2{
-    display: none;
+    display: flex;
     position:fixed;
     color:white;
     right: 2%;
@@ -102,7 +115,7 @@
     color: white;
     
 }
-/* --------navigation bar hover effect------- */
+--------navigation bar hover effect-------
 .sidebar ul li a:hover{
    color: rgb(107, 225, 225);
 }
@@ -111,17 +124,17 @@
     border-bottom: 1px solid rgb(107, 225, 225);
     font-size: 1.7vw;
 }
-/* --------home context------- */
+--------home context-------
 
 .home{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 .hometop{
-    /* border-top: 4px  solid red;
+    border-top: 4px  solid red;
     border-bottom: 4px  solid red;
     border-right: 4px  solid red;
-    border-left: 4px  solid red; */
+    border-left: 4px  solid red;
     width: 80%;
     height:15%;
     position: absolute;
@@ -136,10 +149,10 @@
 }
 
 .homebottom{
-    /* border-top: 4px  solid blue;
+    border-top: 4px  solid blue;
     border-bottom: 4px  solid blue;
     border-right: 4px  solid blue;
-    border-left: 4px  solid blue; */
+    border-left: 4px  solid blue;
     width: 40%;
     height:15%;
     position: absolute;
@@ -179,15 +192,15 @@
     
 }
 
-/* --------register form------- */
+--------register form-------
 
 .register{
     display: none;
-    /* display: none; */
+    display: none;
     position: absolute;
-    /* background-color:#79a49ffd; */
+    background-color:#79a49ffd;
    
-    /* border: 3px solid blue; */
+    border: 3px solid blue;
     width: 40%;
     height: 60%;
     left: 50%;
@@ -206,12 +219,12 @@
     width: 100;
     height: 130%;
     overflow: hidden;
-    /* opacity: 0; */
+    opacity: 0;
     background:url(picture/form_bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     filter:blur(8px) ;
-    /* rgba(132, 130, 130, 0.801)light grey */
+    rgba(132, 130, 130, 0.801)light grey
     z-index: 0;
 }
 .close{
@@ -236,7 +249,7 @@
     display: flex;
 }
 .input_field label{
-    /* border: 3px solid blue; */
+    border: 3px solid blue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-left: 16vh;
     font-style: bold;
@@ -247,8 +260,8 @@
 }
 .reg_input{
     font-size: 2.7vh;
-    /* background-color: rgba(241, 244, 244, 0.035); */
-    /* border:3px solid red; */
+    background-color: rgba(241, 244, 244, 0.035); */ */
+    /* border:3px solid red;
     width:40%;
     outline: none;
     background-color: rgba(223, 216, 216, 0.673);
@@ -276,7 +289,7 @@
 
 /* --------animation home-------  */
 
-@keyframes homeright_anime {
+/* @keyframes homeright_anime {
     0%{
         display: none;
         
@@ -288,11 +301,11 @@
     100%{
         bottom: 37vh;
     }
-}
+} */
 
 /* --------media files -------  */
 
-@media screen and (max-width:1440px){
+/* @media screen and (max-width:1440px){
     .register{
         width:35%;
         height:55%;
@@ -316,7 +329,7 @@
             margin-left: 25vw;
         }
         .navbar ul li a{
-            /* color: aqua; */
+            color: aqua;
             font-size: 3.1vh;
         }
         .logo h1{
@@ -334,7 +347,7 @@
         }
         .input_field label{
             /* border: 3px solid blue; */
-            margin-left: 15vh;
+            /* margin-left: 15vh;
             width: 8vw;
             padding-top: 2vh;
              font-size: 2.5vh;
@@ -342,7 +355,7 @@
         .reg_input{
             font-size: 2vh;
             background-color: rgba(222, 232, 232, 0.644);
-            /* border:3px solid red; */
+            border:3px solid red;
             width:45%;
             outline: none;
             padding: 2vh 1.5vh;
@@ -353,68 +366,30 @@
             margin-left: 30vh;
         }
         #vedio {
-            /* bottom: 0%; */
+            bottom: 0%;
             height: -200%;
         }
     }
     @media screen and (max-width:768px){
-        .navbar ul{
-            display: flex;
-            list-style: none;
-            margin-top: 4vh;
-            margin-left: 20vw;
-        }
         .navbar ul li a{
-            /* color: aqua; */
-            font-size: 2.5vh;
+            display: none;
         }
-        .logo h1{
-            font-size: 3vh;
-            color:beige;
-        }
-        .hometop h1{
-            font-size: 8vh;
-        }
-        .register{
-            width:40%;
-            height:50%;
-            left: 55%;
-        }
-        .reg_heading{
-            margin-left:18.4vh;
-            font-size: 2vh;
-        }
-        .input_field label{
-            /* border: 3px solid blue; */
-            margin-left: 8vh;
-            width: 9vw;
-            padding-top: 2vh;
-             font-size: 2.5vh;
-        }
-        .reg_input{
-            font-size: 2vh;
-            background-color: rgba(222, 232, 232, 0.644);
-            /* border:3px solid red; */
-            width:35%;
-            outline: none;
-            padding: 0.2vh 1.5vh;
+        .menu {
+            display: flex;
         
-        }
-        .register_layer{
-            width: 100%;
-        }
-        .submit_btn{
-            width: 15vw;
-            margin-left: 20vh;
         }
         #vedio {
             display: none;
         }
         body{
+            position: absolute;
              background: url(picture/bg_vedio_img.png);
-            
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 500%;
         }
-    }
+    }  */
     /* @media (max-width:850px){
         .navbar ul{
             display: flex;
