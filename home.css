@@ -88,6 +88,24 @@ body,main{
 .homebottom p{
     font-size: 2.5vh;
 }
+.btn_login{
+    padding: 1.4vh 1.4vh;
+    position: fixed;
+    margin-top: 2vh;
+    margin-left: -7vh;
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.4vh;
+    background-color: beige;
+    border-radius: 1vw;
+}
+.btn_login:hover{
+    cursor: pointer;
+    background-color: rgba(43, 229, 229, 0.736);
+    font-size: 1.2vw;
+    
+}
 /* --------background -------
 .vedio{
     width: 100%;
@@ -176,26 +194,9 @@ body,main{
 
 
 /* --------register button------- */
-.btn_login{
-    padding: 1.4vh 1.4vh;
-    position: fixed;
-    margin-top: 2vh;
-    margin-left: -7vh;
-    color: black;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2.4vh;
-    background-color: beige;
-    border-radius: 1vw;
-}
-.btn_login:hover{
-    cursor: pointer;
-    background-color: rgba(43, 229, 229, 0.736);
-    font-size: 1.2vw;
-    
-}
 
---------register form-------
+
+/* --------register form-------
 
 .register{
     display: none;
@@ -263,7 +264,7 @@ body,main{
 }
 .reg_input{
     font-size: 2.7vh;
-    background-color: rgba(241, 244, 244, 0.035); */ */
+    background-color: rgba(241, 244, 244, 0.035); */ */ */
     /* border:3px solid red;
     width:40%;
     outline: none;
@@ -483,10 +484,3 @@ body,main{
     .submit_btn{
         margin-left: 10vh;
     }
-}
-@media (max-width:610px){
-
-  
-}
-     */
-
